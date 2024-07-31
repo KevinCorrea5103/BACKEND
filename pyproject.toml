@@ -6,7 +6,7 @@ authors = ["KevinSC <37247567+KevinCorrea5103@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 fastapi = "^0.111.1"
 langserve = "^0.2.2"
 langchain-openai = "^0.1.19"
