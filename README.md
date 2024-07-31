@@ -49,3 +49,7 @@
 - LLMChain
 - Memoria de conversación
 - API de OpenAI*# PROMPTIOR-BACKEND
+
+
+
+![Diagrama de Funcionamiento del Sistema Promptior AI](./mapa.svg)
