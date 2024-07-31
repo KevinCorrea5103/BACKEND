@@ -52,4 +52,19 @@
 
 
 
+### para instalar el proyecto
+
+## pip install -r requirements.txt
+
+
+
+### para iniciar el proyecto 
+
+ ## uvicorn main:app --reload    
+
+
+
+
+
+
 ![Diagrama de Funcionamiento del Sistema Promptior AI](./mapa.svg)
