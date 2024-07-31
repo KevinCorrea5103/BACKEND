@@ -17,9 +17,12 @@ load_dotenv()
 
 app = FastAPI(title="Promptior API")
 
+# Cargar variables de entorno para CORS
+cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -47,7 +50,7 @@ def process_pdf(file_path):
     return FAISS.from_documents(texts, embeddings)
 
 # Procesar el PDF al inicio
-pdf_path = "promptior.pdf"
+pdf_path = os.getenv("PDF_PATH", "promptior.pdf")
 vectorstore = process_pdf(pdf_path)
 
 # Crear una instancia de memoria
