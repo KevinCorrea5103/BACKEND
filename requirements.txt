@@ -9,5 +9,9 @@ faiss-cpu
 pypdf
 langchain-community
 selenium==4.15.2
-webdriver-manager==4.0.1
 openai
+aiohttp==3.8.5
+beautifulsoup4==4.12.2
+requests==2.31.0
+asyncio==3.4.3
+  # Ensure you have the latest certificate authority bundle
