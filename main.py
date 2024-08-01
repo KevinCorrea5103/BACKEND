@@ -88,5 +88,5 @@ async def chat(chat_input: ChatInput):
 import uvicorn
 
 if __name__ == "__main__":
-    uvicorn.run("tu_app:app", host="0.0.0.0", port=8000)y
+    uvicorn.run("tu_app:app", host="0.0.0.0", port=8000)
     
