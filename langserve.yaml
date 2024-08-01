@@ -1,5 +1,0 @@
-services:
-  - name: promptior-service
-    type: fastapi
-    entrypoint: serve:app
-    port: 8000
